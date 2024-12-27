@@ -17,6 +17,9 @@ jobs:
         cd build
         cmake ..
         make
+      env: 
+        CC: clang
+        CXX: clang++
 
     - name: Run tests
       run: |
